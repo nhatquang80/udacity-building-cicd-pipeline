@@ -1,4 +1,5 @@
 [![Build Status](https://dev.azure.com/nhatquang8009/udacity-building-cicd-pipeline/_apis/build/status%2Fnhatquang80.udacity-building-cicd-pipeline?branchName=main)](https://dev.azure.com/nhatquang8009/udacity-building-cicd-pipeline/_build/latest?definitionId=1&branchName=main)
+[![Github Actions](https://github.com/nhatquang80/udacity-building-cicd-pipeline/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/nhatquang80/udacity-building-cicd-pipeline/actions/workflows/main.yml)
 
 # Overview
 
