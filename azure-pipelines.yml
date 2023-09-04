@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: My Self-hosted Agent
+pool: MyAgentPool
 
 steps:
 - script: echo Hello, world!
