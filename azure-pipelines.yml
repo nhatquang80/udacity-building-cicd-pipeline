@@ -19,6 +19,6 @@ steps:
 
 resources:
  pipelines:
-   - pipeline: udacity-building-cicd-pipeline
+   - pipeline: 'udacity-building-cicd-pipeline-resource'
      branch: main
      source: 'udacity-building-cicd-pipeline'
