@@ -17,8 +17,8 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-resources:
- pipelines:
-   - pipeline: 'udacity-building-cicd-pipeline-resource'
-     branch: main
-     source: 'udacity-building-cicd-pipeline'
+# resources:
+#  pipelines:
+#    - pipeline: 'udacity-building-cicd-pipeline-resource'
+#      branch: main
+#      source: 'udacity-building-cicd-pipeline'
