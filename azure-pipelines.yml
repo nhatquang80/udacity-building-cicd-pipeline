@@ -19,6 +19,6 @@ steps:
 
 resources:
  pipelines:
-   - pipeline: MyPipeline
+   - pipeline: udacity-building-cicd-pipeline
      branch: main
      source: 'udacity-building-cicd-pipeline'
