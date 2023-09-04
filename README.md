@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/nhatquang8009/udacity-building-cicd-pipeline/_apis/build/status%2Fnhatquang80.udacity-building-cicd-pipeline?branchName=main)](https://dev.azure.com/nhatquang8009/udacity-building-cicd-pipeline/_build/latest?definitionId=1&branchName=main)
+
 # Overview
 
 <TODO: complete this with an overview of your project>
