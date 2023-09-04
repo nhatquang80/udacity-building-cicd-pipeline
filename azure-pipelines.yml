@@ -21,3 +21,4 @@ resources:
  pipelines:
    - pipeline: MyPipeline
      branch: main
+     source: 'nhatquang80.udacity-building-cicd-pipeline (1)'
