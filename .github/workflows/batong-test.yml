@@ -2,7 +2,7 @@ name: CI/CD_Pipeline
 
 on:
   push:
-    branches: ["master"]
+    branches: ["main"]
 
 jobs:
   Pre-Build:
