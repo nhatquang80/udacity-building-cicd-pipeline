@@ -37,7 +37,6 @@ jobs:
         run: |
           echo ${{ vars.STAGE }}
           jq -r 'to_entries|map("\(.key)=\(.value|tostring)")|.[]' env_variables.json > .env.${{ vars.STAGE }}
-          
 
       - name: Install dependencies
         run: |
