@@ -38,10 +38,10 @@ jobs:
           echo ${{ vars.STAGE }}
           jq -r 'to_entries|map("\(.key)=\(.value|tostring)")|.[]' env_variables.json > .env.${{ vars.STAGE }}
 
-      - name: Install dependencies
-        run: |
-          yarn install
-          cd src/layer/nodejs && yarn install
+      # - name: Install dependencies
+      #   run: |
+      #     yarn install
+      #     cd src/layer/nodejs && yarn install
 
       - name: Set AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
