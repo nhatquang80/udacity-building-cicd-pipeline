@@ -4,7 +4,7 @@
 
 # Overview
 
-<TODO: complete this with an overview of your project>
+This guide outlines the steps to set up a Continuous Integration/Continuous Deployment (CI/CD) pipeline using Azure and GitHub Actions. This pipeline automates the build and deployment process, ensuring that our application is consistently tested and deployed whenever changes are made.
 
 ## Project Plan
 <TODO: Project Plan
