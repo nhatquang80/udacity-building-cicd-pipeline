@@ -114,6 +114,6 @@ Use Locust to conduct load testing for our application
 
 ## Demo 
 
-Link to screencast: [Youtube](https://youtu.be/sbDb-0ZrgEQ)
+Link to screencast: [Youtube](https://youtu.be/6CTd7ibyKhQ)
 
 
