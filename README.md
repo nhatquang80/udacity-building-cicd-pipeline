@@ -83,6 +83,29 @@ This guide outlines the steps to set up a Continuous Integration/Continuous Depl
 * Output of streamed log files from deployed application
     ![alt](/screenshots/appservice-log.png)
 
+### Load test
+
+Use Locust to conduct load testing for our application
+
+* Make sure our application is running
+
+    ```bash
+    python app.py 
+    ```
+
+* Install and start `locust` lib
+
+    ```bash
+    pip install locust
+    locust
+    ```
+
+* Open a browser and go to `http://localhost:8089`
+![alt](/screenshots/locust-setup.png)
+
+* Check load test result
+![alt](/screenshots/locust-running.png)
+
 ## Enhancements
 
 * Implementing Terraform enables the management of infrastrucure through code, providing an efficient and scalable approach to resoruce provisioning and management.
