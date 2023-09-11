@@ -7,17 +7,14 @@
 This guide outlines the steps to set up a Continuous Integration/Continuous Deployment (CI/CD) pipeline using Azure and GitHub Actions. This pipeline automates the build and deployment process, ensuring that our application is consistently tested and deployed whenever changes are made.
 
 ## Project Plan
-<TODO: Project Plan
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* Trello board for the project [link](https://trello.com/invite/b/NN9D5O2j/ATTI9738af344b05049c5464112661faa22408CF8796/building-ci-ci-pipeline)
+* Project management [spreadsheet](/project-management.xlsx)
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
-
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+* Architectural Diagram
+![architecture](/architecture.drawio.png)
 
 * Project running on Azure App Service
 
@@ -42,7 +39,6 @@ Port: 443
 
 * Output of streamed log files from deployed application
 
-> 
 
 ## Enhancements
 
@@ -50,6 +46,6 @@ Port: 443
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
+Link to screencast: [Youtube](https://youtu.be/sbDb-0ZrgEQ)
 
 

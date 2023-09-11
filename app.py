@@ -26,6 +26,7 @@ def home():
 # TO DO:  Log out the prediction value
 @app.route("/predict", methods=['POST'])
 def predict():
+    json_payload = request.json
     # Performs an sklearn prediction
     try:
         # Load pretrained model as clf. Try any one model. 
@@ -36,7 +37,6 @@ def predict():
         LOG.info("JSON payload: %s", json_payload)
         return "Model not loaded"
         
-    json_payload = request.json
     LOG.info("JSON payload: %s", json_payload)
     inference_payload = pd.DataFrame(json_payload)
     LOG.info("inference payload DataFrame: %s", inference_payload)
