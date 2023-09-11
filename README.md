@@ -13,36 +13,81 @@ This guide outlines the steps to set up a Continuous Integration/Continuous Depl
 
 ## Instructions
 
-* Architectural Diagram
+### Prerequisites
+- An Azure account: [Create an Azure account](https://azure.com/free)
+
+- A GitHub repository: [Create a GitHub repository](https://docs.github.com/en/github/getting-started-with-github/quickstart/create-a-repo)
+
+
+### Architectural Diagram
+
 ![architecture](/architecture.drawio.png)
 
-* Project running on Azure App Service
+### Deploy the app on Azure Cloud Shell
 
-* Project cloned into Azure Cloud Shell
+* In Azure Cloud Sheel, clone the repo
+    ```bash
+    git clone git@github.com:nhatquang80/udacity-building-cicd-pipeline.git
+    ```
+* Sceenshot
+    ![alt](/screenshots/clone-git-repo.png)
 
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
+* Change to the project directory and create virtual environemnt
+    ```bash
+    cd udacity-building-cicd-pipeline
+    make setup
+    source ~/.udacity-devops/bin/activate 
+    ```
 
-* Output of a test run
+* Install dependencies and run test
+    ```bash
+    make all 
+    ```
+    ![alt](/screenshots/make-all-success.png)
 
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+* Run the application on Cloud Shell
+    ```bash
+    python app.py 
+    ```
+    ![alt](/screenshots/start-app-success.png)
 
-* Running Azure App Service from Azure Pipelines automatic deployment
+* Open another Cloud Shell session and run test
+    ```bash
+    ./make_prediction.sh 
+    ```
+    ![alt](/screenshots/run-app-success.png)
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
+### Deploy the app on Azure App Service
 
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
+* Execute `commands.sh`
+    ```bash
+    ./commands.sh 
+    ```
+    ![alt](/screenshots/deploy-appservice.png)
+
+* Check deployment on Azure Portal
+    ![alt](/screenshots/azure-appservice-running.png)
+
+* Create new pipeline in Azure Pipeline
+    ![alt](/screenshots/pipeline-sucess.png)
+
+* Check successful deploy of the project in Azure Pipeline
+    ![alt](/screenshots/pipeline-running.png)
+
+* Test the application running on Azure App Service deployed automatic by Azure Pipeline
+    ```bash
+    ./make_predict_azure_app.sh 
+    ```
+    ![alt](/screenshots/test-appservice.png)
 
 * Output of streamed log files from deployed application
-
+    ![alt](/screenshots/appservice-log.png)
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+* Implementing Terraform enables the management of infrastrucure through code, providing an efficient and scalable approach to resoruce provisioning and management.
+
+* The code should be seperated into different branches for each feature.
 
 ## Demo 
 
